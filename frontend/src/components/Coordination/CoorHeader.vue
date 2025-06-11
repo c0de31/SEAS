@@ -7,26 +7,7 @@
           Monitoring as of {{ currentDateTime }}
         </div>
       </div>
-    </div>
-
-    <div class="flex items-center space-x-2 w-full max-w-md">
-    <Button 
-      label="Stockholder Directory"
-      class="px-4 py-2 bg-[#073276] rounded-lg hover:bg-[#052659] custom-btn-icon-black"
-      @click="onSearch" 
-      icon="pi pi-user"
-      iconPos="right"
-    />
-
-       <Button 
-      label="Activities"
-      class="px-4 py-2 bg-[#073276] rounded-lg hover:bg-[#052659] custom-btn-icon-black"
-      @click="onSearch" 
-      icon="pi pi-user"
-      iconPos="right"
-    />
-  </div>
-  
+    </div>  
 
     <div class="flex items-center space-x-3">
       <div class="flex flex-col items-end">
@@ -68,21 +49,9 @@ onUnmounted(() => {
 
 const currentYear = ref(new Date().getFullYear())
 
-const searchQuery = ref('')
-
-const onSearch = () => {
-  console.log('Searching for:', searchQuery.value)
-}
 
 </script>
 
 <style scoped>
-.p-button{
-  background: transparent;
-}
 
-/* Make the icon inside the custom button black */
-.custom-btn-icon-black :deep(.pi) {
-  color: #000 !important;
-}
 </style>

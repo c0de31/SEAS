@@ -4,18 +4,18 @@
     
     <SideNavBar />
     <div class="flex-1 flex flex-col w-full">
-      <Header />
+      <HomeHeader />
     </div>
   </div>
 </template>
 
 <script>
-import Header from '../components/HomePage/Header.vue';
+import HomeHeader from '../components/HomePage/HomeHeader.vue';
 import SideNavBar from '../components/HomePage/SideNavBar.vue';
 export default {
     name: 'HomePage',
     components: {
-        Header,
+        HomeHeader,
         SideNavBar
     }
 };

@@ -1,15 +1,14 @@
 <template>
-  <header class="absolute left-20 top-0 right-0 z-10 bg-gradient-to-r from-gray-100 to-gray-200 px-10 py-1 mb-1.5 flex items-center justify-between" style="width:calc(100vw-5rem);">
+  <header class="fixed left-20 top-0 right-0 z-10 bg-[#eaecef] px-10 py-1 mb-1.5 flex items-center justify-between" style="width:calc(100vw-5rem);">
     <div class="flex items-center space-x-4  mb-0.75 ">
-  
+      <i class="pi pi-gauge" style="font-size: 1.5em;"></i>
       <div>
-        <span class="text-4xl font-extrabold text-[#1B1B1B] leading-tight">Dashboard</span>
+        <span class="text-3xl font-bold text-[#1B1B1B] leading-tight">Dashboard</span>
         <div class="text-sm text-gray-600 mt-1 font-medium">
           Monitoring as of {{ currentDateTime }}
         </div>
       </div>
     </div>
-
     <div class="flex space-x-10 text-[#073276]" >
       <Select
         :options="accounts"
@@ -17,7 +16,7 @@
         optionLabel="label"
         class="w-full"
         placeholder="Accounts"
-      />
+        />
       <Select
         :options="regions"
         v-model="selectedRegion"
@@ -33,15 +32,14 @@
         placeholder="Province"
       />
     </div>
-
     <div class="flex items-center space-x-3">
-      <div class="flex flex-col items-end">
-        <span class="text-2xl font-extrabold text-[#073276]">John Doe</span>
-        <div class="text-xs text-gray-600 mt-1">
-          Compilation for year {{ currentYear }}
-        </div>
+      <div class=" text-gray-600 mt-1" style="font-size: medium;">
+        Compilation for year {{ currentYear }} |
       </div>
-      <i class="pi pi-user text-3xl text-[#073276] ml-2"></i>
+      <div class="flex flex-col items-end">
+        <span class="text-2xl font-bold text-[#073276]">John Doe</span>
+      </div>
+        <i class="pi pi-user text-[#073276] ml-2" style="font-size: x-large;"></i>
     </div>
   </header>
 </template>

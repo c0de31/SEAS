@@ -65,9 +65,8 @@ button:focus-visible {
   display: flex;
   margin: 0;
   padding: 0;
-  background-color: #636363;
+  background:  #eaecef;
 }
-
 
 @media (prefers-color-scheme: light) {
   :root {

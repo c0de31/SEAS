@@ -8,14 +8,21 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Activities: typeof import('./src/components/Coordination/Activities.vue')['default']
     Button: typeof import('primevue/button')['default']
+    CoorActivity: typeof import('./src/components/Coordination/CoorActivity.vue')['default']
+    CoorDirectoryHeader: typeof import('./src/components/Coordination/CoorDirectoryHeader.vue')['default']
+    CoorHeader: typeof import('./src/components/Coordination/CoorHeader.vue')['default']
     Dropdown: typeof import('primevue/dropdown')['default']
-    Header: typeof import('./src/components/HomePage/Header.vue')['default']
+    Header: typeof import('./src/components/Coordination/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    HomeHeader: typeof import('./src/components/HomePage/HomeHeader.vue')['default']
     InputText: typeof import('primevue/inputtext')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Select: typeof import('primevue/select')['default']
     SideNavBar: typeof import('./src/components/HomePage/SideNavBar.vue')['default']
+    StockholderDirectory: typeof import('./src/components/Coordination/StockholderDirectory.vue')['default']
+    StockHolderDirectory: typeof import('./src/components/Coordination/StockHolderDirectory.vue')['default']
   }
 }
