@@ -2,36 +2,13 @@
   <header class="absolute left-20 top-0 right-0 z-10 bg-[#eaecef] px-10 py-4 flex items-center justify-between" style="width:calc(100vw-5rem);">
     <div class="flex items-center space-x-4 ">
     <div>
-      <i class="pi pi-home" style="font-size: 2rem; margin-right: 10px;"></i>
+      <i class="pi pi-gauge" style="font-size: 2rem; margin-right: 10px;"></i>
         <span class="text-4xl font-medium text-[#1B1B1B]">Dashboard</span>  
-      </div>
+    </div>
       <div class="text-sm text-gray-600 font-light">
           Monitoring as of {{ currentDateTime }}
         </div>
       </div>  
-    <!-- <div class="flex space-x-10 text-[#073276]" >
-      <Select
-        :options="accounts"
-        v-model="selectedAccount"
-        optionLabel="label"
-        class="w-full"
-        placeholder="Accounts"
-        />
-      <Select
-        :options="regions"
-        v-model="selectedRegion"
-        optionLabel="label"
-        class="w-full"
-        placeholder="Region"
-      />
-      <Select
-        :options="provinces"
-        v-model="selectedProvince"
-        optionLabel="label"
-        class="w-full "
-        placeholder="Province"
-      />
-    </div> -->
     <div class="flex items-center space-x-3">
       <div class=" text-gray-600 mt-1" style="font-size: medium;">
         Compilation for year {{ currentYear }} |
@@ -46,7 +23,6 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-import Select from 'primevue/select'
 const currentDateTime = ref('')
 
 function updateDateTime() {
@@ -72,38 +48,6 @@ onUnmounted(() => {
 })
 
 const currentYear = ref(new Date().getFullYear())
-
-const accounts = ref([
-  { label: 'Regional Accounts of the Philippines' },
-  { label: 'Provincial Product Accounts' }
-])
-
-const regions = ref([
-  { label: 'National Capital Region' },
-  { label: 'Cordillera Administrative Region' },
-  { label: 'Ilocos Region' },
-  { label: 'Cagayan Valley' },
-  { label: 'Central Luzon' },
-  { label: 'CALABARZON' },
-  { label: 'MIMAROPA Region' },
-  { label: 'Bicol Region' },
-  { label: 'Western Visayas' },
-  { label: 'Negros Island Region' },
-  { label: 'Eastern Visayas' }
-])
-
-const provinces = ref([
-  { label: 'Summary' },
-  { label: 'Province 1' },
-  { label: 'Province 2' },
-  { label: 'Province 3' },
-  { label: 'HUC 1' },
-  { label: 'HUC 2' }
-])
-
-const selectedAccount = ref(null)
-const selectedRegion = ref(null)
-const selectedProvince = ref(null)
 </script>
 
 <style scoped>
