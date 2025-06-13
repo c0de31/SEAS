@@ -1,9 +1,10 @@
 <template>
 <header class="absolute left-20 top-0 right-0 z-10 bg-[#EACEF] px-10 py-4 flex flex-col gap-2" style="width:calc(100vw-5rem);">
+
     <div class="flex items-center justify-between w-full mt-0.5">
         <div class="flex items-center space-x-3">
-                <i class="pi pi-address-book text-[#073276]" style="font-size: 1.5em;"></i>
-                <span class="text-3xl font-bold text-[#1B1B1B]">Activities</span>
+                <i class="pi pi-objects-column text-[#1B1B1B]" style="font-size: 2rem;"></i>
+                <span class="text-4xl font-medium text-[#1B1B1B]">Activities</span>
         </div>
         <div class="flex items-center space-x-3">
             <div class=" text-gray-600 mt-1" style="font-size: medium;">
@@ -32,8 +33,7 @@ const currentYear = ref(new Date().getFullYear())
 {
     background: #fff;
 }
-.icon-btn:active,
-.icon-btn.active
+.icon-btn:active
 {
     background: #fff;
 }

@@ -3,8 +3,8 @@
 
     <div class="flex items-center justify-between w-full mt-0.5">
         <div class="flex items-center space-x-3">
-                <i class="pi pi-address-book text-[#1B1B1B]" style="font-size: 2rem;"></i>
-                <span class="text-4xl font-medium text-[#1B1B1B]">Stakeholder Directory</span>
+                <i class="pi pi-cog text-[#1B1B1B]" style="font-size: 2rem;"></i>
+                <span class="text-4xl font-medium text-[#1B1B1B]">Processing</span>
         </div>
         <div class="flex items-center space-x-3">
             <div class=" text-gray-600 mt-1" style="font-size: medium;">

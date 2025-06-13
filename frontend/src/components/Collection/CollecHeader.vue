@@ -2,10 +2,12 @@
 <header class="absolute left-20 top-0 right-0 z-10 bg-[#EACEF] px-10 py-4 flex flex-col gap-2" style="width:calc(100vw-5rem);">
 
     <div class="flex items-center justify-between w-full mt-0.5">
-        <div class="flex items-center space-x-3">
-                <i class="pi pi-address-book text-[#1B1B1B]" style="font-size: 2rem;"></i>
-                <span class="text-4xl font-medium text-[#1B1B1B]">Stakeholder Directory</span>
-        </div>
+      <div class="flex items-center space-x-4 ">
+    <div>
+      <i class="pi pi-book" style="font-size: 2rem; margin-right: 10px;"></i>
+        <span class="text-4xl font-medium text-[#1B1B1B]">Collection</span>  
+    </div>
+      </div>  
         <div class="flex items-center space-x-3">
             <div class=" text-gray-600 mt-1" style="font-size: medium;">
                     Compilation for year {{ currentYear }} |
@@ -22,6 +24,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 const currentYear = ref(new Date().getFullYear())
+
 </script>
 
 <style scoped>

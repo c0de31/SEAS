@@ -1,5 +1,6 @@
 <template>
-  <aside class="h-screen w-20 flex flex-col justify-between items-center py-4 ">
+  <!--w-auto rounded-2xl p-5 bg-surface-50 dark:bg-surface-900 h-full flex flex-col justify-between --> 
+  <aside class="h-full w-20 flex flex-col justify-between items-center py-5 ">
 
     <div class="mb-2 flex flex-col items-center">
       <img src="/vite.svg" alt="Logo" class="w-8 h-8 mb-2" />
